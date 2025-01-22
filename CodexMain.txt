@@ -1814,7 +1814,7 @@ do
 		for i, v in changelog do
 			str ..= string.format("%s<font color=\"#eb4545\">[%s]</font>\n\n", str == "" and "" or "\n\n", DateTime.fromIsoDate(v.stamp):FormatLocalTime("ll", "en-us"));
 			for i2, v2 in v.data do
-				str ..= "Ã¢â‚¬Â¢ " .. v2;
+				str ..= "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ " .. v2;
 				if i2 < #v.data then
 					str ..= "\n";
 				end
@@ -2061,7 +2061,7 @@ do
 				AnchorPoint = Vector2.new(0.5, 0.5),
 				Name = "title",
 				Position = UDim2.new(0.5, 0, 0.2, -20),
-				Text = "Codex",
+				Text = "codex modified by @veon2v50",
 				TextSize = 24
 			}),
 			textLabel({
@@ -2103,7 +2103,7 @@ do
 							end
 						end
 						game:GetService("StarterGui"):SetCore("SendNotification", {
-							Title = "Codex Android",
+							Title = "codex Android",
 							Text = "Whitelist link has been set to your clipboard."
 						});
 					end,
@@ -2167,7 +2167,7 @@ do
 							end
 						end
 						game:GetService("StarterGui"):SetCore("SendNotification", {
-							Title = "Codex Android",
+							Title = "codex Android",
 							Text = "Invalid key."
 						});
 					end,
@@ -2327,7 +2327,7 @@ do
 					FontSize = Enum.FontSize.Size18, 
 					Name = "title", 
 					Position = UDim2.new(0, 78, 0, 38), 
-					Text = "Codex", 
+					Text = "codex modified by @veon2v50", 
 					TextColor3 = Color3.fromHex("ffffff"), 
 					TextSize = 16, 
 					TextTransparency = 1,
@@ -2591,7 +2591,7 @@ do
 			teleportService:TeleportToPlaceInstance(game.PlaceId, jobId);
 		else
 			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "Codex ",
+				Title = "codex ",
 				Text = "No suitable servers found"
 			});
 		end
@@ -4981,7 +4981,7 @@ do
 	framework.init = (function()
 		local sig = signal.new();
 		local directory = instanceUtils:DynamicParent(instanceUtils:Create("Folder", {
-			Name = "Codex"
+			Name = "codex modified by @veon2v50"
 		}));
 		local login;
 	
